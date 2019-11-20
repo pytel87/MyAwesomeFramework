@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "MyAwesomeFramework/Classes/**/*"
 
   spec.static_framework = true
-
+    spec.public_header_files = "MyAwesomeFramework.framework/Headers/*.h"
    spec.dependency "Alamofire"
    spec.dependency "Firebase/Analytics"
    spec.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/Firebase/Core/Sources' }
