@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
    spec.ios.deployment_target = "10.0"
  
   spec.source       = { :git => 'https://github.com/pytel87/MyAwesomeFramework.git' }
-
+  #spec.source       = { :path => '.' }
   spec.source_files  = "MyAwesomeFramework/Classes/**/*"
 
   spec.static_framework = true
@@ -37,7 +37,7 @@ Pod::Spec.new do |spec|
     spec.dependency 'GoogleAds-IMA-iOS-SDK'
     spec.dependency 'NielsenAppSDK'
     spec.vendored_frameworks = [
-      'GemiusSDK.framework'
+      'GemiusSDK.framework',
       'MyAwesomeFramework.framework'
     ]
  
