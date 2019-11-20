@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.summary      = "A short description of MyAwesomeFramework."
   spec.description  = "Hello"
 
-  spec.homepage     = "https://github.com/pytel87/MyAwesomeFramework.git"
+  spec.homepage     = "http://Hello"
   
   spec.license      = "MIT"
   
@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "MyAwesomeFramework/Classes/**/*"
 
   spec.static_framework = true
-    spec.public_header_files = "MyAwesomeFramework.framework/Headers/*.h"
+
    spec.dependency "Alamofire"
    spec.dependency "Firebase/Analytics"
    spec.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/Firebase/Core/Sources' }
@@ -38,6 +38,7 @@ Pod::Spec.new do |spec|
     spec.dependency 'NielsenAppSDK'
     spec.vendored_frameworks = [
       'GemiusSDK.framework'
+      'MyAwesomeFramework.framework'
     ]
  
 end
